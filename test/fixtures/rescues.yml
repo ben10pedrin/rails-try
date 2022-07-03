@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2022-07-02
+  rescuers: MyString
+  organization: MyString
+  notes: MyText
+  address: one
+
+two:
+  date: 2022-07-02
+  rescuers: MyString
+  organization: MyString
+  notes: MyText
+  address: two

@@ -1,0 +1,35 @@
+<%= form_with model: animal do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :alias %><br>
+    <%= form.text_field :alias %>
+  </div>
+  
+  <div>
+	<%= form.label :category %><br>
+    <%= form.select :category, Animal.types %><br>
+  </div>
+  
+  <div>
+	<%= form.label :sex %><br>
+    <%= form.select :sex, Animal.sexes %><br>
+  </div>
+  
+  <div>
+	<%= form.label :status %><br>
+    <%= form.select :status, Animal.statuses %><br>
+  </div>
+  
+  <div>
+    <%= form.label :particular_signs %><br>
+    <%= form.text_area :particular_signs %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

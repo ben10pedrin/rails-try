@@ -1,0 +1,43 @@
+<h1>Animal</h1>
+
+<nav>
+	<%= link_to "Rescue", animal_rescue_path(@animal) %>
+	<a href="#">Events</a>
+	<a href="#">Appointments</a>
+	<a href="#">Adoptions</a>
+</nav>
+
+<p>
+  <strong>Name:</strong>
+  <%= @animal.name %>
+</p>
+
+<p>
+  <strong>Alias:</strong>
+  <%= @animal.alias %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @animal.category %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @animal.sex %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @animal.status %>
+</p>
+
+<p>
+  <strong>Particular Signs:</strong>
+  <%= @animal.particular_signs %>
+</p>
+
+<div>
+	<a href="<%= edit_animal_path(@animal) %>"><button>Edit</button></a>
+	<a href="<%= animal_path(@animal) %>" data-turbo-method="delete" data-turbo-confirm="Are you sure?"><button>Delete</button></a>
+</div>
